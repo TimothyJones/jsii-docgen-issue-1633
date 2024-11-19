@@ -1,0 +1,104 @@
+{
+  "author": {
+    "email": "timothy.l.jones@gmail.com",
+    "name": "Timothy Jones",
+    "roles": [
+      "author"
+    ],
+    "url": "https://github.com/TimothyJones"
+  },
+  "description": "Reproduction of https://github.com/cdklabs/jsii-docgen/issues/1633",
+  "docs": {
+    "stability": "stable"
+  },
+  "homepage": "git@github.com:TimothyJones/jsii-docgen-issue-1633.git",
+  "jsiiVersion": "5.6.0 (build 7be6ace)",
+  "license": "BSD-3-Clause",
+  "metadata": {
+    "jsii": {
+      "pacmak": {
+        "hasDefaultInterfaces": true
+      }
+    },
+    "tscRootDir": "src"
+  },
+  "name": "jsii-docgen-issue-1633",
+  "readme": {
+    "markdown": "\n#\n"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:TimothyJones/jsii-docgen-issue-1633.git"
+  },
+  "schema": "jsii/0.10.0",
+  "targets": {
+    "java": {
+      "maven": {
+        "artifactId": "repro",
+        "groupId": "io.contract-testing.contractcase"
+      },
+      "package": "io.contract_testing.jsii.repro"
+    },
+    "js": {
+      "npm": "jsii-docgen-issue-1633"
+    }
+  },
+  "types": {
+    "jsii-docgen-issue-1633.ReproduceBug": {
+      "assembly": "jsii-docgen-issue-1633",
+      "docs": {
+        "custom": {
+          "public": "true"
+        },
+        "stability": "stable",
+        "summary": "This class reproduces the bugs at {@link https://github.com/cdklabs/jsii-docgen/issues/1633 this } * issue} and {@link https://github.com/cdklabs/jsii-docgen/issues/1634 this link}."
+      },
+      "fqn": "jsii-docgen-issue-1633.ReproduceBug",
+      "initializer": {
+        "docs": {
+          "stability": "stable",
+          "summary": "This documents a constructor."
+        },
+        "locationInModule": {
+          "filename": "src/index.ts",
+          "line": 16
+        },
+        "parameters": [
+          {
+            "docs": {
+              "summary": "- this documents the parameter."
+            },
+            "name": "someParameter",
+            "type": {
+              "primitive": "string"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "src/index.ts",
+        "line": 7
+      },
+      "name": "ReproduceBug",
+      "properties": [
+        {
+          "docs": {
+            "stability": "stable"
+          },
+          "locationInModule": {
+            "filename": "src/index.ts",
+            "line": 9
+          },
+          "name": "someField",
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ],
+      "symbolId": "src/index:ReproduceBug"
+    }
+  },
+  "version": "0.1.0",
+  "fingerprint": "g7T+kLPXnP/DdRl0QOyMK1IXdan5KEJDiNPXPATFALk="
+}

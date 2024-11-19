@@ -1,0 +1,60 @@
+{
+  "version": "0.1",
+  "language": "typescript",
+  "metadata": {
+    "packageName": "jsii-docgen-issue-1633",
+    "packageVersion": "0.1.0"
+  },
+  "apiReference": {
+    "constructs": [],
+    "classes": [
+      {
+        "initializer": {
+          "fqn": "jsii-docgen-issue-1633.ReproduceBug.Initializer",
+          "displayName": "Initializer",
+          "id": "jsii-docgen-issue-1633.ReproduceBug.Initializer",
+          "parameters": [
+            {
+              "fqn": "jsii-docgen-issue-1633.ReproduceBug.Initializer.parameter.someParameter",
+              "displayName": "someParameter",
+              "id": "jsii-docgen-issue-1633.ReproduceBug.Initializer.parameter.someParameter",
+              "type": {
+                "formattingPattern": "string"
+              },
+              "variadic": false,
+              "docs": {
+                "summary": "- this documents the parameter."
+              }
+            }
+          ],
+          "usage": "import { ReproduceBug } from 'jsii-docgen-issue-1633'\n\nnew ReproduceBug(someParameter: string)"
+        },
+        "interfaces": [],
+        "instanceMethods": [],
+        "staticMethods": [],
+        "constants": [],
+        "properties": [
+          {
+            "fqn": "jsii-docgen-issue-1633.ReproduceBug.property.someField",
+            "displayName": "someField",
+            "id": "jsii-docgen-issue-1633.ReproduceBug.property.someField",
+            "type": {
+              "formattingPattern": "string"
+            },
+            "docs": {},
+            "usage": "public readonly someField: string;"
+          }
+        ],
+        "fqn": "jsii-docgen-issue-1633.ReproduceBug",
+        "displayName": "ReproduceBug",
+        "id": "jsii-docgen-issue-1633.ReproduceBug",
+        "docs": {
+          "summary": "This class reproduces the bugs at {@link https://github.com/cdklabs/jsii-docgen/issues/1633 this } * issue} and {@link https://github.com/cdklabs/jsii-docgen/issues/1634 this link}."
+        }
+      }
+    ],
+    "structs": [],
+    "interfaces": [],
+    "enums": []
+  }
+}

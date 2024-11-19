@@ -1,0 +1,60 @@
+{
+  "name": "jsii-docgen-issue-1633",
+  "version": "0.1.0",
+  "description": "Reproduction of https://github.com/cdklabs/jsii-docgen/issues/1633",
+  "author": "Timothy Jones <timothy.l.jones@gmail.com> (https://github.com/TimothyJones)",
+  "license": "BSD-3-Clause",
+  "main": "build/index.js",
+  "private": "true",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:TimothyJones/jsii-docgen-issue-1633.git"
+  },
+  "scripts": {
+    "prebuild": "rimraf build",
+    "build": "jsii && npm run build:docs:jsii", 
+    "build:docs:jsii": "rimraf docs-json && jsii-docgen -f json -l java -o ./docs-json/java.json && jsii-docgen -f json -l typescript -o ./docs-json/typescript.json",
+    "watch": "jsii -w",
+    "prepackage": "rimraf dist",
+    "package": "jsii-pacmak",
+    "format:base": "prettier \"{docs,src}/**/*.{ts,md}\"",
+    "format:check": "npm run format:base -- --list-different",
+    "format:fix": "npm run format:base -- --write --log-level warn"
+  },
+  "jsii": {
+    "excludeTypescript": [
+      "_incoming/**/*",
+      "**/*.spec.ts",
+      "jest.config.ts"
+    ],
+    "outdir": "dist",
+    "versionFormat": "full",
+    "tsc": {
+      "outDir": "build",
+      "forceConsistentCasingInFileNames": true,
+      "composite": true,
+      "declaration": true,
+      "declarationMap": true,
+      "sourceMap": true
+    },
+    "targets": {
+      "java": {
+        "package": "io.contract_testing.jsii.repro",
+        "maven": {
+          "groupId": "io.contract-testing.contractcase",
+          "artifactId": "repro"
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "jsii": "^5.5.4",
+    "jsii-docgen": "^10.5.7",
+    "jsii-pacmak": "^1.104.0",
+    "mkdirp": "^3.0.1",
+    "prettier": "3.3.3",
+    "rimraf": "^6.0.1"
+  },
+  "stability": "stable",
+  "types": "build/index.d.ts"
+}

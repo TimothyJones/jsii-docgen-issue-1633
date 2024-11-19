@@ -1,0 +1,60 @@
+{
+  "version": "0.1",
+  "language": "java",
+  "metadata": {
+    "packageName": "jsii-docgen-issue-1633",
+    "packageVersion": "0.1.0"
+  },
+  "apiReference": {
+    "constructs": [],
+    "classes": [
+      {
+        "initializer": {
+          "fqn": "io.contract_testing.jsii.repro.ReproduceBug.Initializer",
+          "displayName": "Initializer",
+          "id": "jsii-docgen-issue-1633.ReproduceBug.Initializer",
+          "parameters": [
+            {
+              "fqn": "io.contract_testing.jsii.repro.ReproduceBug.Initializer.parameter.someParameter",
+              "displayName": "someParameter",
+              "id": "jsii-docgen-issue-1633.ReproduceBug.Initializer.parameter.someParameter",
+              "type": {
+                "formattingPattern": "java.lang.String"
+              },
+              "variadic": false,
+              "docs": {
+                "summary": "- this documents the parameter."
+              }
+            }
+          ],
+          "usage": "import io.contract_testing.jsii.repro.ReproduceBug;\n\nnew ReproduceBug(java.lang.String someParameter);"
+        },
+        "interfaces": [],
+        "instanceMethods": [],
+        "staticMethods": [],
+        "constants": [],
+        "properties": [
+          {
+            "fqn": "io.contract_testing.jsii.repro.ReproduceBug.property.someField",
+            "displayName": "someField",
+            "id": "jsii-docgen-issue-1633.ReproduceBug.property.someField",
+            "type": {
+              "formattingPattern": "java.lang.String"
+            },
+            "docs": {},
+            "usage": "public java.lang.String getSomeField();"
+          }
+        ],
+        "fqn": "io.contract_testing.jsii.repro.ReproduceBug",
+        "displayName": "ReproduceBug",
+        "id": "jsii-docgen-issue-1633.ReproduceBug",
+        "docs": {
+          "summary": "This class reproduces the bugs at {@link https://github.com/cdklabs/jsii-docgen/issues/1633 this } * issue} and {@link https://github.com/cdklabs/jsii-docgen/issues/1634 this link}."
+        }
+      }
+    ],
+    "structs": [],
+    "interfaces": [],
+    "enums": []
+  }
+}
